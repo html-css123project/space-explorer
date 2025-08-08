@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Famous Astronauts | Space Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="space-icon.png" type="image/png">
+
+    <style>
+        .astro-wrapper {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .astro-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            text-align: center;
+            border: 2px solid transparent;
+        }
+
+        .astro-card:hover {
+            background: rgba(0, 255, 255, 0.07);
+            transform: translateY(-5px);
+            border-color: #00ffffaa;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+        }
+
+        .astro-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .astro-card h3 {
+            color: #00ffff;
+            margin-bottom: 10px;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .astro-card p {
+            color: #e0e0e0;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <details>
+                <summary>Explore ▼</summary>
+                <nav class="dropdown-content">
+                    <a href="asteriods.html">About Asteroids</a>
+                    <a href="astronauts.html">Famous Astronauts</a>
+                    <a href="astronomy-facts.html">Astronomy | Facts</a>
+                    <a href="brief-description.html">About Space</a>
+                    <a href="galexies.html">About galexies</a>
+                    <a href="comets.html">About Comets</a>
+                    <a href="missions.html">Missions</a>
+                    <a href="moon.html">About Moons</a>
+                    <a href="solarsystem.html">About Solar System</a>
+                    <a href="stars.html">About Stars</a>
+                    <a href="timeline.html">Timeline</a>
+                    <a href="universe.html">About Universe</a>
+                </nav>
+            </details>
+        </nav>
+
+        <h1 class="main-title">Space Explorer</h1>
+
+        <nav>
+            <details>
+                <summary>Multimedia ▼</summary>
+                <nav class="dropdown-content">
+                    <a href="gallery.html">Images</a>
+                </nav>
+            </details>
+
+            <details>
+                <summary>Contact Us ▼</summary>
+                <nav class="dropdown-content">
+                    <a href="#">Email</a>
+                    <a href="#">Phone</a>
+                    <a href="#">Support</a>
+                </nav>
+            </details>
+        </nav>
+    </header>
+
+    <nav class="second-navbar">
+        <a href="index.html">Home</a>
+        <a href="brief-description.html">About Space</a>
+        <a href="missions.html">Missions</a>
+        <a href="astronomy-facts.html">Astronomy Facts</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="astronauts.html">About Astronauts</a>
+    </nav>
+
+    <section class="hero">
+        <img src="https://www.quickanddirtytips.com/wp-content/uploads/2019/12/astronaut-jpg.webp"
+            alt="Astronaut in space">
+        <div class="hero-text">
+            <h2>Famous Astronauts</h2>
+            <p>
+                Meet the explorers who dared to journey beyond Earth and rewrite the story of space travel.
+            </p>
+        </div>
+    </section>
+
+    <section class="astro-wrapper">
+
+        <div class="astro-card">
+            <img src="https://scientiamag.org/wp-content/uploads/2019/07/neil3-compressed.jpg" alt="Neil Armstrong">
+            <h3>Neil Armstrong</h3>
+            <p>
+                First human to walk on the Moon during the Apollo 11 mission in 1969. His words, "That's one small step
+                for man, one giant leap for mankind," became historic.
+            </p>
+        </div>
+
+        <div class="astro-card">
+            <img src="https://static.theprint.in/wp-content/uploads/2024/01/Kalpana-chawla-1.jpg" alt="Kalpana Chawla">
+            <h3>Kalpana Chawla</h3>
+            <p>
+                The first woman of Indian origin in space. She flew aboard the Space Shuttle Columbia in 1997 and again
+                in 2003, where she tragically lost her life during re-entry.
+            </p>
+        </div>
+
+        <div class="astro-card">
+            <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2024-06/240605-sunita-williams-ch-1203-4bd0e0.jpg"
+                alt="Sunita Williams">
+            <h3>Sunita Williams</h3>
+            <p>
+                A record-setting astronaut who has spent over 320 days in space. Known for her spacewalks and
+                long-duration missions aboard the ISS.
+            </p>
+        </div>
+
+        <div class="astro-card">
+            <img src="https://littleastronomy.com/wp-content/uploads/2019/07/yuri_gagarin_helmet.jpg"
+                alt="Yuri Gagarin">
+            <h3>Yuri Gagarin</h3>
+            <p>
+                The first human to journey into space aboard Vostok 1 in 1961. A Soviet hero, his successful orbit of
+                Earth marked the dawn of human spaceflight.
+            </p>
+        </div>
+
+        <div class="astro-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFyrRq5XSKXvkf7JBzGcnsJuWOrN6HdxYZGg&s"
+                alt="Chris Hadfield">
+            <h3>Chris Hadfield</h3>
+            <p>
+                A Canadian astronaut known for his musical videos aboard the ISS and engaging space education. He became
+                a cultural icon for bringing space closer to Earth.
+            </p>
+        </div>
+
+        <div class="astro-card">
+            <img src="https://cdn.britannica.com/55/69055-050-8D293FF9/Buzz-Aldrin-1969.jpg?w=400&h=300&c=crop"
+                alt="Buzz Aldrin">
+            <h3>Buzz Aldrin</h3>
+            <p>
+                Lunar module pilot on Apollo 11 and the second person to walk on the Moon. A vocal advocate for Mars
+                exploration and continued space exploration.
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p class="follow-line">Keep exploring and follow us at</p>
+
+        <section class="social-icons">
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitterx--v2.png" alt="X"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube"></a>
+        </section>
+
+        <section class="footer-links">
+            <section>
+                <a href="#">Humans in Science</a>
+                <a href="#">Technology</a>
+                <a href="#">Learning Resources</a>
+                <a href="#">Aeronautics</a>
+            </section>
+
+            <section>
+                <a href="#">Project - Space</a>
+                <a href="#">Missions</a>
+                <a href="#">The Universe</a>
+                <a href="#">More Articles</a>
+            </section>
+        </section>
+
+        <hr class="footer-line">
+
+        <section class="bottom-links">
+            <a href="#">Sitemap</a>
+            <a href="#">For Media</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Budget and Annual Reports</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Legal</a>
+        </section>
+    </footer>
+
+</body>
+
+</html>

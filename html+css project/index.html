@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Space Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="space-icon.png" type="image/png">
+
+    <style>
+        h3 {
+            text-align: center;
+        }
+
+        body {
+            background-color: #0e0f12;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section-wrapper {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .intro-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #00ffff;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .intro-text {
+            text-align: center;
+            color: #ccc;
+            margin-bottom: 50px;
+            font-size: 1.1rem;
+        }
+
+        .topic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 60px;
+        }
+
+        .topic-card {
+            background-color: #1a1d22;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+            font-family: Arial, sans-serif;
+        }
+
+        .topic-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.25);
+        }
+
+        .topic-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            color: #00ffff;
+            margin: 0 0 10px;
+        }
+
+        .card-content p {
+            color: #ccc;
+            font-size: 1rem;
+        }
+
+        .card-content a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #000;
+            background-color: #00ffff;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .card-content a:hover {
+            background-color: #00cccc;
+        }
+
+        .more-articles {
+            text-decoration: none;
+            color: #0d72ad;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .more-articles:hover {
+            color: #9c4dff;
+            transform: translateX(3px);
+        }
+
+        .did-you-know-section {
+            background-color: #0b0b0e;
+            color: #ffffff;
+            padding: 50px 20px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .did-you-know-section h2 {
+            font-size: 28px;
+            text-align: center;
+            color: #00e6e6;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #00e6e6;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .did-you-know-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 40px;
+            /* Adds space to top/bottom and left/right */
+            box-sizing: border-box;
+        }
+
+        .did-you-know-card {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            width: 300px;
+            color: white;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .did-you-know-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.25);
+        }
+
+
+        .dyk-question {
+            font-size: 15px;
+            font-weight: bold;
+            color: #00e6e6;
+            margin-bottom: 8px;
+        }
+
+        .dyk-fact {
+            font-size: 14px;
+            color: #dddddd;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <details>
+                <summary>Explore ▼</summary>
+                <nav class="dropdown-content">
+                    <a href="asteriods.html">About Asteroids</a>
+                    <a href="astronauts.html">Famous Astronauts</a>
+                    <a href="astronomy-facts.html">Astronomy | Facts</a>
+                    <a href="brief-description.html">About Space</a>
+                    <a href="galexies.html">About galexies</a>
+                    <a href="comets.html">About Comets</a>
+                    <a href="missions.html">Missions</a>
+                    <a href="moon.html">About Moons</a>
+                    <a href="solarsystem.html">About Solar System</a>
+                    <a href="stars.html">About Stars</a>
+                    <a href="timeline.html">Timeline</a>
+                    <a href="universe.html">About Universe</a>
+                </nav>
+            </details>
+        </nav>
+
+        <h1 class="main-title">Space Explorer</h1>
+
+        <nav>
+            <details>
+                <summary>Multimedia ▼</summary>
+                <nav class="dropdown-content">
+                    <a href="gallery.html">Images</a>
+                </nav>
+            </details>
+
+            <details>
+                <summary>Contact Us ▼</summary>
+                <nav class="dropdown-content">
+                    <a href="#">Email</a>
+                    <a href="#">Phone</a>
+                    <a href="#">Support</a>
+                </nav>
+            </details>
+        </nav>
+    </header>
+
+    <!-- Second Navbar -->
+    <nav class="second-navbar">
+        <a href="index.html">Home</a>
+        <a href="brief-description.html">About Space</a>
+        <a href="missions.html">Missions</a>
+        <a href="astronomy-facts.html">Astronomy Facts</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="astronauts.html">About Astronauts</a>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://c4.wallpaperflare.com/wallpaper/36/568/49/earth-theme-background-images-wallpaper-preview.jpg"
+            alt="Astronaut in space">
+        <div class="hero-text">
+            <h2 style="color: #f7f7f7;text-align: center; font-family:impact;font-size: 50px;"><b>W</b>elcome to
+                Space Explorer</h2>
+            <p style="font-size: 25px;text-align: center;color: #c1e9eb;">
+                Begin your journey from the infinite cosmos to the tiniest celestial bodies.
+            </p>
+        </div>
+    </section>
+    <br>
+    <br>
+    <!-- Main Section -->
+    <section class="section-wrapper">
+        <h2 style="font-size: 35px;color:#c1e9eb;font-family:Gill Sans ; text-align: center;">
+            -Every atom tells a tale; every star sings a
+            science-</h2>
+
+        <p class="intro-text">From the vast stretches of the universe to the swirling arms of galaxies, from the glowing
+            stars to our familiar solar system, this website takes you on a breathtaking dive into the wonders of space.
+            We begin with the origins of the universe, unfolding the mysteries of dark matter, time, and space. Then, we
+            zoom in to explore galaxies like the Milky Way, venture through the beauty of nebulae, pulsars, and black
+            holes, and arrive at our solar system, with its dynamic planets and fascinating moons.
+            Whether you’re curious about space missions, astronomical facts, or the heroes who ventured into the unknown
+            — you’re in the right orbit.
+            Let your curiosity guide you as we explore the science, the history, and the imagination that fuels our
+            fascination with the final frontier.</p>
+        <br>
+        <br>
+        <h2 style="font-size: 35px;color:#c1e9eb;text-align: left;font-family: 'Times New Roman', Times, serif;">
+            Featured Articles→</h2>
+        <div class="topic-grid">
+            <div class="topic-card">
+                <a href="universe.html"><img
+                        src="https://assets.science.nasa.gov/dynamicimage/assets/science/astro/exo-explore/internal_resources/details/original/1795_1585_what-is-exoplanet-banner.jpg"
+                        alt="Universe"></a>
+                <div class="card-content">
+                    <h3>The Universe</h3>
+                </div>
+            </div>
+            <div class="topic-card">
+                <a href="galexies.html"><img
+                        src="https://images.theconversation.com/files/433499/original/file-20211123-17-199wbff.jpg?ixlib=rb-4.1.0&rect=0%2C296%2C5982%2C2991&q=45&auto=format&w=1356&h=668&fit=crop"
+                        alt="Galaxies"></a>
+                <div class="card-content">
+                    <h3>Galaxies</h3>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <a href="milkyway.html"><img src="https://cdn.mos.cms.futurecdn.net/9rsiRSbhwqjzecwKFYx6Ci.jpg"
+                        alt="Milky Way Galaxy"></a>
+                <div class="card-content">
+                    <h3>Milky Way Galaxy</h3>
+
+
+                </div>
+            </div>
+            <div class="topic-card">
+                <a href="solarsystem.html"> <img
+                        src="https://static.scientificamerican.com/dam/m/128e9a2bf8a1939/original/DM0HT8_WEB.jpg?m=1714676104.168&w=1200"
+                        alt="Solar System">
+                </a>
+                <div class="card-content">
+                    <h3>Solar System </h3>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <a href="stars.html"><img
+                        src="https://blog.nwf.org/wp-content/blogs.dir/11/files/2015/06/ShootingStar_Donated_JordanReed.jpg"
+                        alt="Stars"></a>
+                <div class="card-content">
+                    <h3>Stars</h3>
+
+
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <a href="moon.html">
+                    <img src="https://cdn.mos.cms.futurecdn.net/Kg6b5u6UZZVp48yU4MxSxa.jpg" alt="Moon"></a>
+                <div class="card-content">
+                    <h3>Moons</h3>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <h3><a href="brief-description.html" class="more-articles">More Articles→</a></h3>
+    <br>
+    <br>
+    <br>
+    <section>
+        <h2 style="font-size: 35px;color:#c1e9eb;text-align: center;font-family: 'Times New Roman', Times, serif;;">
+            -Unmissable Cosmic Truths That Will Blow Your Mind-</h2>
+        <div class="did-you-know-container">
+
+
+            <div class="did-you-know-card">
+                <p class="dyk-question">Did you know that-</p>
+                <p class="dyk-fact">Neutron stars spin up to 600 times per second, making them incredibly dense and
+                    fast-spinning remnants of supernova explosions.</p>
+            </div>
+
+            <div class="did-you-know-card">
+                <p class="dyk-question">Did you know that-</p>
+                <p class="dyk-fact">Space is not completely silent. Certain particles and magnetic fields allow sound to
+                    travel in the form of plasma waves.</p>
+            </div>
+
+            <div class="did-you-know-card">
+                <p class="dyk-question">Did you know that-</p>
+                <p class="dyk-fact">The Sun makes up 99.86% of the total mass of our solar system.</p>
+            </div>
+
+            <div class="did-you-know-card">
+                <p class="dyk-question">Did you know that-</p>
+                <p class="dyk-fact">One day on Venus is longer than one year on Venus due to its slow rotation.</p>
+            </div>
+
+            <div class="did-you-know-card">
+                <p class="dyk-question">Did you know that-</p>
+                <p class="dyk-fact">The Moon is slowly drifting away from Earth at a rate of about 3.8 centimeters per
+                    year.
+                </p>
+            </div>
+            <div class="did-you-know-card">
+                <p class="dyk-question">Did you know that-</p>
+                <p class="dyk-fact">There are more stars in the universe than grains of sand on all the beaches on
+                    Earth.
+                </p>
+            </div>
+
+            <div class="did-you-know-card">
+                <p class="dyk-question">Did you know that-</p>
+                <p class="dyk-fact">A spoonful of a neutron star would weigh about a billion tons on Earth.</p>
+            </div>
+
+            <div class="did-you-know-card">
+                <p class="dyk-question">Did you know that-</p>
+                <p class="dyk-fact">Mars has the tallest volcano in the solar system, Olympus Mons, which is over 21 km
+                    high.</p>
+            </div>
+
+            <div class="did-you-know-card">
+                <p class="dyk-question">Did you know that-</p>
+                <p class="dyk-fact">Jupiter has 95 confirmed moons as of 2024, more than any other planet in our solar
+                    system.</p>
+            </div>
+
+            <div class="did-you-know-card">
+                <p class="dyk-question">Did you know that-</p>
+                <p class="dyk-fact">In space, astronauts can grow up to 2 inches taller due to the lack of gravity
+                    compressing their spine.</p>
+            </div>
+
+            <div class="did-you-know-card">
+                <p class="dyk-question">Did you know that-</p>
+                <p class="dyk-fact">Uranus rotates on its side, with an axial tilt of 98 degrees, making its seasons
+                    last
+                    over 20 Earth years.</p>
+            </div>
+
+            <div class="did-you-know-card">
+                <p class="dyk-question">Did you know that-</p>
+                <p class="dyk-fact">Black holes can slow down time near their event horizons due to extreme
+                    gravitational
+                    fields.</p>
+            </div>
+
+            <div class="did-you-know-card">
+                <p class="dyk-question">Did you know that-</p>
+                <p class="dyk-fact">Saturn’s rings are made mostly of ice and rock particles ranging from micrometers to
+                    meters in size.</p>
+            </div>
+
+            <div class="did-you-know-card">
+                <p class="dyk-question">Did you know that-</p>
+                <p class="dyk-fact">Pluto has a heart-shaped glacier called Tombaugh Regio that remains one of its most
+                    striking features.</p>
+            </div>
+
+            <div class="did-you-know-card">
+                <p class="dyk-question">Did you know that-</p>
+                <p class="dyk-fact">Voyager 1 is the farthest human-made object from Earth, having entered interstellar
+                    space in 2012.</p>
+            </div>
+            <div class="did-you-know-card">
+                <p class="dyk-question">Did you know that-</p>
+                <p class="dyk-fact">A day on Saturn lasts only about 10 hours and 42 minutes, making it the
+                    second-fastest rotating planet.</p>
+            </div>
+
+            <div class="did-you-know-card">
+                <p class="dyk-question">Did you know that-</p>
+                <p class="dyk-fact">The James Webb Space Telescope can see light from galaxies that formed just a few
+                    hundred million years after the Big Bang.</p>
+            </div>
+
+            <div class="did-you-know-card">
+                <p class="dyk-question">Did you know that-</p>
+                <p class="dyk-fact">If two pieces of the same metal touch in space, they can bond permanently due to a
+                    phenomenon called cold welding.</p>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p class="follow-line">Keep exploring and follow us at</p>
+
+        <section class="social-icons">
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitterx--v2.png" alt="X"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube"></a>
+        </section>
+
+        <section class="footer-links">
+            <section>
+                <a href="#">Humans in Science</a>
+                <a href="#">Technology</a>
+                <a href="#">Learning Resources</a>
+                <a href="#">Aeronautics</a>
+            </section>
+
+            <section>
+                <a href="#">Project - Space</a>
+                <a href="#">Missions</a>
+                <a href="#">The Universe</a>
+                <a href="#">More Articles</a>
+            </section>
+        </section>
+
+        <hr class="footer-line">
+
+        <section class="bottom-links">
+            <a href="#">Sitemap</a>
+            <a href="#">For Media</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Budget and Annual Reports</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Legal</a>
+        </section>
+    </footer>
+
+</body>
+
+</html>

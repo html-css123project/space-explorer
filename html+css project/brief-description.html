@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Topics Overview | Space Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="space-icon.png" type="image/png">
+
+    <style>
+        body {
+            background-color: #0e0f12;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section-wrapper {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .intro-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #00ffff;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .intro-text {
+            text-align: center;
+            color: #ccc;
+            margin-bottom: 50px;
+            font-size: 1.1rem;
+        }
+
+        .topic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
+        }
+
+        .topic-card {
+            background-color: #1a1d22;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+            font-family: Arial, sans-serif;
+        }
+
+        .topic-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.25);
+        }
+
+        .topic-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            color: #00ffff;
+            margin: 0 0 10px;
+        }
+
+        .card-content p {
+            color: #ccc;
+            font-size: 1rem;
+        }
+
+        .card-content a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #000;
+            background-color: #00ffff;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .card-content a:hover {
+            background-color: #00cccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <details>
+                <summary>Explore ▼</summary>
+                <nav class="dropdown-content">
+                    <a href="asteriods.html">About Asteroids</a>
+                    <a href="astronauts.html">Famous Astronauts</a>
+                    <a href="astronomy-facts.html">Astronomy | Facts</a>
+                    <a href="brief-description.html">About Space</a>
+                    <a href="galexies.html">About galexies</a>
+                    <a href="comets.html">About Comets</a>
+                    <a href="missions.html">Missions</a>
+                    <a href="moon.html">About Moons</a>
+                    <a href="solarsystem.html">About Solar System</a>
+                    <a href="stars.html">About Stars</a>
+                    <a href="timeline.html">Timeline</a>
+                    <a href="universe.html">About Universe</a>
+                </nav>
+            </details>
+        </nav>
+
+        <h1 class="main-title">Space Explorer</h1>
+
+        <nav>
+            <details>
+                <summary>Multimedia ▼</summary>
+                <nav class="dropdown-content">
+                    <a href="gallery.html">Images</a>
+                </nav>
+            </details>
+
+            <details>
+                <summary>Contact Us ▼</summary>
+                <nav class="dropdown-content">
+                    <a href="#">Email</a>
+                    <a href="#">Phone</a>
+                    <a href="#">Support</a>
+                </nav>
+            </details>
+        </nav>
+    </header>
+
+    <!-- Second Navbar -->
+    <nav class="second-navbar">
+        <a href="index.html">Home</a>
+        <a href="brief-description.html">About Space</a>
+        <a href="missions.html">Missions</a>
+        <a href="astronomy-facts.html">Astronomy Facts</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="astronauts.html">About Astronauts</a>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="section-wrapper">
+        <h2 class="intro-title">Explore Key Space Topics</h2>
+        <p class="intro-text">Uncover the mysteries of our universe through these major celestial wonders. Dive into
+            each topic and explore its depth, beauty, and cosmic importance.</p>
+
+        <div class="topic-grid">
+            <div class="topic-card">
+                <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/astro/exo-explore/internal_resources/details/original/1795_1585_what-is-exoplanet-banner.jpg"
+                    alt="Universe">
+                <div class="card-content">
+                    <h3>The Universe</h3>
+                    <p>All of space and time — the Universe holds galaxies, stars, planets, and mysteries beyond
+                        imagination. Explore its vastness and origins.</p>
+                    <a href="universe.html">Learn More</a>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <img src="https://images.theconversation.com/files/433499/original/file-20211123-17-199wbff.jpg?ixlib=rb-4.1.0&rect=0%2C296%2C5982%2C2991&q=45&auto=format&w=1356&h=668&fit=crop"
+                    alt="Galaxies">
+                <div class="card-content">
+                    <h3>Galaxies</h3>
+                    <p>Massive islands of stars, gas, and dark matter — galaxies are the grand structures of the cosmos,
+                        from spirals to ellipticals to irregular marvels.</p>
+                    <a href="galexies.html">Learn More</a>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <img src="https://cdn.mos.cms.futurecdn.net/9rsiRSbhwqjzecwKFYx6Ci.jpg" alt="Milky Way Galaxy">
+                <div class="card-content">
+                    <h3>Milky Way Galaxy</h3>
+                    <p>Our home galaxy — a barred spiral filled with stars, planets, and cosmic dust — the Milky Way is
+                        where our solar system lives and thrives.</p>
+                    <a href="milkyway.html">Learn More</a>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <img src="https://staging-jubilee.flickr.com/3085/3143746144_99a980221a_k.jpg" alt="Solar System">
+                <div class="card-content">
+                    <h3>Solar System</h3>
+                    <p>Home to our Sun and its orbiting planets, the solar system is a cosmic family of worlds, moons,
+                        and mysteries waiting to be uncovered.</p>
+                    <a href="solarsystem.html">Learn More</a>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <img src="https://blog.nwf.org/wp-content/blogs.dir/11/files/2015/06/ShootingStar_Donated_JordanReed.jpg"
+                    alt="Stars">
+                <div class="card-content">
+                    <h3>Stars</h3>
+                    <p>Stars are fiery giants lighting up the universe — from our life-giving Sun to the distant blazing
+                        blue giants scattered across galaxies.</p>
+                    <a href="stars.html">Learn More</a>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <img src="https://cdn.mos.cms.futurecdn.net/Kg6b5u6UZZVp48yU4MxSxa.jpg" alt="Moon">
+                <div class="card-content">
+                    <h3>Moons</h3>
+                    <p>From Earth's familiar Moon to icy moons of Jupiter and Saturn, these satellite worlds hold
+                        secrets of ancient impacts and hidden oceans.</p>
+                    <a href="moon.html">Learn More</a>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <img src="https://cdn.mos.cms.futurecdn.net/KLXJHZX37JfEjgsppM2qmG.jpg" alt="Comets">
+                <div class="card-content">
+                    <h3>Comets</h3>
+                    <p>Cosmic snowballs with fiery tails, comets race across space leaving behind trails of dust and
+                        ancient clues from the birth of the Solar System.</p>
+                    <a href="comets.html">Learn More</a>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <img src="https://i0.wp.com/www.sciencenews.org/wp-content/uploads/2018/04/042418_LG_asteroid_water_feat_FREE.jpg"
+                    alt="Asteroids">
+                <div class="card-content">
+                    <h3>Asteroids</h3>
+                    <p>Rocky wanderers of space, asteroids are remnants of early solar system formation — some even
+                        harbor metals and water, others threaten impact.</p>
+                    <a href="asteriods.html">Learn More</a>
+                </div>
+            </div>
+            <!-- Missions -->
+            <div class="topic-card">
+                <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41550-020-1148-6/MediaObjects/41550_2020_1148_Fig1_HTML.jpg"
+                    alt="Space Missions">
+                <div class="card-content">
+                    <h3>Space Missions</h3>
+                    <p>From Apollo to Artemis, past and present missions have pushed the boundaries of
+                        exploration and human achievement beyond Earth’s atmosphere.</p>
+                    <a href="missions.html">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="topic-card">
+                <img src="https://sociable.co/wp-content/uploads/2019/06/galaxy-telescope.jpg" alt="Timeline">
+                <div class="card-content">
+                    <h3>Timeline</h3>
+                    <p>Travel through time as you explore key milestones in space discovery — from Galileo’s
+                        telescope to interstellar probes and Mars rovers.</p>
+                    <a href="timeline.html">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Astronomy Facts -->
+            <div class="topic-card">
+                <img src="https://cosmic-watch.com/cosmicbeta/wp-content/uploads/2019/10/Space_consiousness_II_k.jpg"
+                    alt="Astronomy Facts">
+                <div class="card-content">
+                    <h3>Astronomy Facts</h3>
+                    <p>Fascinating facts about stars, black holes, pulsars, quasars, and the strange, beautiful
+                        objects that make the universe so intriguing.</p>
+                    <a href="astronomy-facts.html">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Astronauts -->
+            <div class="topic-card">
+                <img src="https://cdn.pixabay.com/photo/2011/12/14/12/11/astronaut-11080_1280.jpg" alt="Astronauts">
+                <div class="card-content">
+                    <h3>Astronauts</h3>
+                    <p>Meet the brave men and women who have ventured into the cosmos — from Neil Armstrong to
+                        Kalpana Chawla and beyond.</p>
+                    <a href="astronauts.html">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p class="follow-line">Keep exploring and follow us at</p>
+
+        <section class="social-icons">
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitterx--v2.png" alt="X"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube"></a>
+        </section>
+
+        <section class="footer-links">
+            <section>
+                <a href="#">Humans in Science</a>
+                <a href="#">Technology</a>
+                <a href="#">Learning Resources</a>
+                <a href="#">Aeronautics</a>
+            </section>
+
+            <section>
+                <a href="#">Project - Space</a>
+                <a href="#">Missions</a>
+                <a href="#">The Universe</a>
+                <a href="#">More Articles</a>
+            </section>
+        </section>
+
+        <hr class="footer-line">
+
+        <section class="bottom-links">
+            <a href="#">Sitemap</a>
+            <a href="#">For Media</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Budget and Annual Reports</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Legal</a>
+        </section>
+    </footer>
+
+</body>
+
+</html>

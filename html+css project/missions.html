@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Missions | Space Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Orbitron font already used across the site -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="space-icon.png" type="image/png">
+    <style>
+        /* --- page‑specific helper styles --- */
+        .missions-wrapper {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .missions-wrapper h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: #00ffff;
+            margin: 40px 0 15px;
+            font-size: 1.8rem;
+        }
+
+        .mission-list {
+            display: grid;
+            gap: 18px;
+        }
+
+        .mission-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid #00ffff80;
+            padding: 18px 22px;
+            border-radius: 10px;
+            transition: all .3s ease;
+            color: #e6e6e6;
+        }
+
+        .mission-card:hover {
+            transform: translateY(-3px);
+            border-left-color: #00ffff;
+            box-shadow: 0 0 12px rgba(0, 255, 255, .25);
+            background: rgba(0, 255, 255, .08);
+        }
+
+        .mission-card h3 {
+            margin: 0 0 6px;
+            font-size: 1.2rem;
+            color: #00ffff;
+        }
+
+        .mission-meta {
+            font-size: .88rem;
+            color: #bbbbbb;
+            margin-bottom: 6px;
+        }
+
+        .mission-desc {
+            font-size: 1.02rem;
+            line-height: 1.55;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ---------- Header (unchanged) ---------- -->
+    <header>
+        <nav>
+            <details>
+                <summary>Explore ▼</summary>
+                <nav class="dropdown-content">
+                    <a href="asteriods.html">About Asteroids</a>
+                    <a href="astronauts.html">Famous Astronauts</a>
+                    <a href="astronomy-facts.html">Astronomy | Facts</a>
+                    <a href="brief-description.html">About Space</a>
+                    <a href="galexies.html">About galexies</a>
+                    <a href="comets.html">About Comets</a>
+                    <a href="missions.html">Missions</a>
+                    <a href="moon.html">About Moons</a>
+                    <a href="solarsystem.html">About Solar System</a>
+                    <a href="stars.html">About Stars</a>
+                    <a href="timeline.html">Timeline</a>
+                    <a href="universe.html">About Universe</a>
+                </nav>
+            </details>
+        </nav>
+
+        <h1 class="main-title">Space Explorer</h1>
+
+        <nav>
+            <details>
+                <summary>Multimedia ▼</summary>
+                <nav class="dropdown-content">
+                    <a href="gallery.html">Images</a>
+                </nav>
+            </details>
+
+            <details>
+                <summary>Contact Us ▼</summary>
+                <nav class="dropdown-content">
+                    <a href="#">Email</a>
+                    <a href="#">Phone</a>
+                    <a href="#">Support</a>
+                </nav>
+            </details>
+        </nav>
+    </header>
+
+    <!-- ---------- Second Navbar ---------- -->
+    <nav class="second-navbar">
+        <a href="index.html">Home</a>
+        <a href="brief-description.html">About Space</a>
+        <a href="missions.html">Missions</a>
+        <a href="astronomy-facts.html">Astronomy Facts</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="astronauts.html">About Astronauts</a>
+    </nav>
+
+    <!-- ---------- Hero Section for Missions ---------- -->
+    <section class="hero">
+        <img src="https://www.shutterstock.com/image-photo/space-rocket-shuttle-blast-puffs-600nw-1936558615.jpg"
+            alt="Rocket Launch - Artemis 1">
+        <div class="hero-text">
+            <h2>Journey Beyond Earth</h2>
+            <p>
+                Discover the bold missions that have shaped our understanding of the cosmos — from Moon landings to Mars
+                rovers and interstellar explorers.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- ---------- Main Content ---------- -->
+    <main class="missions-wrapper">
+
+        <!-- Past Missions -->
+        <h2>Past Missions 🚀</h2>
+        <section class="mission-list">
+
+            <article class="mission-card">
+                <h3>Apollo 11</h3>
+                <p class="mission-meta">NASA • 1969 | First crewed Moon landing</p>
+                <p class="mission-desc">
+                    Neil Armstrong and Buzz Aldrin set foot on the lunar surface while Michael Collins orbited
+                    above—proving humanity could reach another world.
+                </p>
+            </article>
+
+            <article class="mission-card">
+                <h3>Voyager 1 & 2</h3>
+                <p class="mission-meta">NASA • 1977‑present (interstellar)</p>
+                <p class="mission-desc">
+                    Twin probes that flew past Jupiter and Saturn (Voyager 2 continued to Uranus & Neptune) and are now
+                    sending data from interstellar space.
+                </p>
+            </article>
+
+            <article class="mission-card">
+                <h3>Cassini‑Huygens</h3>
+                <p class="mission-meta">NASA/ESA/ASI • 1997‑2017 | Saturn system</p>
+                <p class="mission-desc">
+                    Orbited Saturn for 13 years, dropped Huygens onto Titan, revealed geysers on Enceladus, and finished
+                    with a dramatic “Grand Finale” dive.
+                </p>
+            </article>
+
+            <article class="mission-card">
+                <h3>New Horizons</h3>
+                <p class="mission-meta">NASA • 2006‑present | Pluto & Kuiper Belt</p>
+                <p class="mission-desc">
+                    Flew by Pluto in 2015 uncovering its heart‑shaped glacier, then zipped deeper to study Kuiper‑Belt
+                    object Arrokoth.
+                </p>
+            </article>
+
+        </section>
+
+        <!-- Ongoing Missions -->
+        <h2>Ongoing Missions 🛰</h2>
+        <section class="mission-list">
+
+            <article class="mission-card">
+                <h3>Perseverance & Ingenuity</h3>
+                <p class="mission-meta">NASA • Landed 2021 | Mars sample caching</p>
+                <p class="mission-desc">
+                    The rover is drilling core samples in Jezero Crater to hunt signs of ancient life, while its little
+                    helicopter Ingenuity pioneers powered flight on another planet.
+                </p>
+            </article>
+
+            <article class="mission-card">
+                <h3>Juno</h3>
+                <p class="mission-meta">NASA • 2016‑present | Jupiter orbiter</p>
+                <p class="mission-desc">
+                    Mapping Jupiter’s magnetic field, peering beneath cloud tops, and snapping jaw‑dropping images of
+                    the gas giant’s swirling storms and moon flybys.
+                </p>
+            </article>
+
+            <article class="mission-card">
+                <h3>James Webb Space Telescope</h3>
+                <p class="mission-meta">NASA/ESA/CSA • 2022‑present | Infrared observatory</p>
+                <p class="mission-desc">
+                    With its 6.5‑meter gold‑mirrored eye, JWST is revealing baby galaxies, probing exoplanet
+                    atmospheres, and rewriting cosmic history in infrared.
+                </p>
+            </article>
+
+            <article class="mission-card">
+                <h3>Artemis Program</h3>
+                <p class="mission-meta">NASA • 2022‑2030s | Crewed Moon return</p>
+                <p class="mission-desc">
+                    Kicked off with Artemis I’s uncrewed lunar loop in 2022; Artemis II will fly astronauts around the
+                    Moon, paving the way for the first woman and next man on the lunar surface.
+                </p>
+            </article>
+
+        </section>
+
+        <!-- Upcoming Missions -->
+        <h2>Upcoming Missions 🌠</h2>
+        <section class="mission-list">
+
+            <article class="mission-card">
+                <h3>Europa Clipper</h3>
+                <p class="mission-meta">NASA • Launch 2024 | Europa flybys</p>
+                <p class="mission-desc">
+                    Will perform nearly 50 flybys of Jupiter’s ocean world Europa, scanning for subsurface water and
+                    potential habitability.
+                </p>
+            </article>
+
+            <article class="mission-card">
+                <h3>VERITAS & DAVINCI+</h3>
+                <p class="mission-meta">NASA • Mid‑2020s | Venus revival</p>
+                <p class="mission-desc">
+                    Twin missions will map Venus in high‑resolution radar (VERITAS) and sample its thick atmosphere
+                    during a plunge probe (DAVINCI+).
+                </p>
+            </article>
+
+            <article class="mission-card">
+                <h3>JUICE</h3>
+                <p class="mission-meta">ESA • Launched 2023, arrives 2031 | Jovian moons</p>
+                <p class="mission-desc">
+                    The Jupiter Icy Moons Explorer will orbit Ganymede and conduct close flybys of Europa & Callisto to
+                    investigate hidden oceans.
+                </p>
+            </article>
+
+            <article class="mission-card">
+                <h3>Mars Sample Return</h3>
+                <p class="mission-meta">NASA/ESA • Late 2020s | Mars rocks to Earth</p>
+                <p class="mission-desc">
+                    A multi‑step campaign to fetch Perseverance’s cached samples and rocket them back to Earth for
+                    laboratory analysis — a planetary‑science game‑changer.
+                </p>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- ---------- Footer (unchanged) ---------- -->
+    <footer>
+        <p class="follow-line">Keep exploring and follow us at</p>
+
+        <section class="social-icons">
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitterx--v2.png" alt="X"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube"></a>
+        </section>
+
+        <section class="footer-links">
+            <section>
+                <a href="#">Humans in Science</a>
+                <a href="#">Technology</a>
+                <a href="#">Learning Resources</a>
+                <a href="#">Aeronautics</a>
+            </section>
+
+            <section>
+                <a href="#">Project - Space</a>
+                <a href="#">Missions</a>
+                <a href="#">The Universe</a>
+                <a href="#">More Articles</a>
+            </section>
+        </section>
+
+        <hr class="footer-line">
+
+        <section class="bottom-links">
+            <a href="#">Sitemap</a>
+            <a href="#">For Media</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Budget and Annual Reports</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Legal</a>
+        </section>
+    </footer>
+
+</body>
+
+</html>

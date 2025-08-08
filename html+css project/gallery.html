@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Space Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="space-icon.png" type="image/png">
+
+    <style>
+        .gallery-wrapper {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px #00ffff80;
+        }
+
+        .hero-text h2 {
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+        }
+
+        .gallery-container {
+            border-left: 3px solid #00ffff55;
+            border-right: 3px solid #00ffff55;
+            padding: 30px 15px;
+            background: rgba(255, 255, 255, 0.03);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        .gallery-grid img {
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.07);
+            border-color: #00ffffaa;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <details>
+                <summary>Explore ▼</summary>
+                <nav class="dropdown-content">
+                    <a href="asteriods.html">About Asteroids</a>
+                    <a href="astronauts.html">Famous Astronauts</a>
+                    <a href="astronomy-facts.html">Astronomy | Facts</a>
+                    <a href="brief-description.html">About Space</a>
+                    <a href="galexies.html">About galexies</a>
+                    <a href="comets.html">About Comets</a>
+                    <a href="missions.html">Missions</a>
+                    <a href="moon.html">About Moons</a>
+                    <a href="solarsystem.html">About Solar System</a>
+                    <a href="stars.html">About Stars</a>
+                    <a href="timeline.html">Timeline</a>
+                    <a href="universe.html">About Universe</a>
+                </nav>
+            </details>
+        </nav>
+
+        <h1 class="main-title">Space Explorer</h1>
+
+        <nav>
+            <details>
+                <summary>Multimedia ▼</summary>
+                <nav class="dropdown-content">
+                    <a href="gallery.html">Images</a>
+                </nav>
+            </details>
+
+            <details>
+                <summary>Contact Us ▼</summary>
+                <nav class="dropdown-content">
+                    <a href="#">Email</a>
+                    <a href="#">Phone</a>
+                    <a href="#">Support</a>
+                </nav>
+            </details>
+        </nav>
+    </header>
+
+    <!-- Second Navbar -->
+    <nav class="second-navbar">
+        <a href="index.html">Home</a>
+        <a href="brief-description.html">About Space</a>
+        <a href="missions.html">Missions</a>
+        <a href="astronomy-facts.html">Astronomy Facts</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="astronauts.html">About Astronauts</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BhY2UlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww"
+            alt="Outer Space Background">
+        <div class="hero-text">
+            <h2>Explore the Cosmos – Gallery</h2>
+            <p>
+                A stunning collection of galaxies, astronauts, and breathtaking views from space. Each image is a window
+                into the universe.
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-wrapper">
+        <div class="gallery-container">
+            <div class="gallery-grid">
+
+                <img src="https://cff2.earth.com/uploads/2025/03/24162851/galaxy-spiral-J23453268-0449256_too-massive_1m.jpg"
+                    alt="Galaxy Spiral">
+                <img src="https://www.nasa.gov/wp-content/uploads/2023/02/edu_srch_microsofts_hacking_stem.jpg"
+                    alt="Astronaut in orbit">
+                <img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/22BONCVE5MI6TPKW5LDLWAWQDU.jpg&w=1440"
+                    alt="Earth from space">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzmRl-oDChMrE02I-QfPHIlOsfMzFVb0uxvlwn7dTFrI7W-I1Q2keUjbBq09AUSuU_6I&usqp=CAU"
+                    alt="Colorful nebula">
+                <img src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1674x942+0+0/resize/1100/quality/50/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F7d%2F33%2F7904f068442997c3932a4b56f6a7%2Fap25075213743321.jpg"
+                    alt="Astronaut on ISS">
+                <img src="https://news.columbia.edu/sites/default/files/content/2023/m51-galaxy-export.jpg"
+                    alt="Galactic field">
+                <img src="https://i.pinimg.com/736x/7b/37/6b/7b376b4aeb76bc22c2c3c8fc8abc5e17.jpg" alt="Moon close-up">
+                <img src="https://cdn.mos.cms.futurecdn.net/Hji9ScfospJPmww8ckeAFS-1200-80.jpg"
+                    alt="Spaceship and stars">
+                <img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2020/06/one_amongst_millions/22062199-1-eng-GB/One_amongst_millions_pillars.jpg"
+                    alt="Stars and Milky Way">
+                <img src="https://skyfi.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Ftxzhex5a1q7n%2F4nmHymk5uLScIUGCYw42g1%2F828baaef378c0273658a85ebef3ded59%2Ffall_out_of_the_sky.webp&w=3840&q=75"
+                    alt="Satellite in orbit">
+                <img src="https://www.treehugger.com/thmb/xqNW-JCrV-uAW5mJ3bdDJkgK77I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2015__11__LeonidMeteoriteStreakingThroughEarthsSky-64895295ae8447a099a072c8bf6b11b9.jpg"
+                    alt="comets">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2hIGyz2L205uBrksslExIVaOh7LPIrjfREA&s"
+                    alt="meteors">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="follow-line">Keep exploring and follow us at</p>
+
+        <section class="social-icons">
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitterx--v2.png" alt="X"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube"></a>
+        </section>
+
+        <section class="footer-links">
+            <section>
+                <a href="#">Humans in Science</a>
+                <a href="#">Technology</a>
+                <a href="#">Learning Resources</a>
+                <a href="#">Aeronautics</a>
+            </section>
+
+            <section>
+                <a href="#">Project - Space</a>
+                <a href="#">Missions</a>
+                <a href="#">The Universe</a>
+                <a href="#">More Articles</a>
+            </section>
+        </section>
+
+        <hr class="footer-line">
+
+        <section class="bottom-links">
+            <a href="#">Sitemap</a>
+            <a href="#">For Media</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Budget and Annual Reports</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Legal</a>
+        </section>
+    </footer>
+
+</body>
+
+</html>
